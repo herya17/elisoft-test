@@ -1,0 +1,267 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  padding: 2px;
+  text-align: center;
+}
+
+body {
+  background-color: #f7f7f7;
+  font-family: sans-serif;
+}
+
+main {
+  padding: 0;
+}
+
+nav {
+	/* background-color: #4a4a4a; */
+  width: 100%;
+  margin: 50px auto 20px 5px;
+}
+
+nav ul {
+	list-style-type: none;
+	display: flex;
+	padding: 0;
+	margin: 0;
+}
+
+nav a {
+	flex-grow: 1;
+	text-align: center;
+	padding: 10px;
+	text-decoration: none;
+  color: black;
+  border: 1px solid black;
+}
+
+.card {
+  padding: 30px !important;
+  padding-bottom: 25px;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.action-button {
+  padding: 10px;
+  text-align: center;
+}
+
+.action-button a {
+  padding: 12px;
+  background-color: burlywood;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.card-input {
+  padding: 10px;
+}
+
+.card-input input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin: 10px 0;
+}
+
+.card-input button {
+  width: 100%;
+  padding: 15px;
+  background-color: burlywood;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.nested-menu-page {
+  padding: 10px 0;
+  font-size: 15px;
+}
+
+.nested-menu-page ul {
+  list-style-type: none;
+  padding: 0 27px;
+}
+
+.nested-menu-page li {
+  margin: 10px 0;
+}
+
+.nested-menu-page__input {
+  margin-left: 5px;
+}
+
+.nested-menu-page__input input {
+  margin-right: 5px;
+  padding: 8px;
+}
+
+.nested-menu-page button {
+  margin: 0 2px;
+  font-size: 22px;
+  padding: 6px 6px 2px 6px;
+}
+
+.nested-menu-page span {
+  margin: 0 3px;
+}
+
+.list-profile-github-page {
+  padding: 10px;
+}
+
+.list-profile-github-page input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin: 10px 0;
+}
+
+.list-profile-github__container {
+  padding: 10px 0;
+}
+
+.item-profile-github {
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 25px;
+  background-color: white;
+}
+
+.item-profile-github__header {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.item-profile-github__header img {
+  flex-basis: 25%;
+  border-radius: 1000px;
+	max-width: 80px;
+	min-width: 80px;
+	max-height: 80px;
+	object-fit: cover;
+  object-position: center;
+}
+
+.item-profile-github__name {
+  flex-basis: 75%;
+  font-size: 15px;
+  margin: 5px 17px;
+}
+
+.item-profile-github__name h2,p {
+  margin: 0;
+}
+
+.item-profile-github__name p {
+  margin-top: 5px;
+}
+
+.item-profile-github__body {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+}
+
+.item-profile-github__body p {
+  flex-grow: 1;
+  margin: 0 5px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.caseone-page {
+  padding: 5px;
+  font-size: 10px;
+}
+
+.skeleton {
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 80%);
+  }
+
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+
+.item-profile-github__skeleton-name {
+  padding: 15px;
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 25px;
+}
+
+.item-profile-github__skeleton-username {
+  padding: 11px;
+  width: 70%;
+  background-color: #f0f0f0;
+  border-radius: 25px;
+  margin-top: 15px;
+}
+
+.item-profile-github__skeleton {
+  padding: 11px;
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 25px;
+  margin: 0 5px;
+}
+
+
+@media screen and (min-width: 768px) {
+  nav {
+    padding: 0 20%;
+  }
+
+  .card {
+    padding: 0 20%;
+  }
+
+  .list-profile-github-page {
+    padding: 0 20%;
+  }
+
+  .item-profile-github__name {
+    margin: 40px 50px;
+  }
+
+  .item-profile-github__body {
+    margin-top: 20px;
+  }
+
+  .item-profile-github__header {
+    padding: 10px 35px;
+  }
+
+  .item-profile-github__header img {
+    max-width: 120px;
+    min-width: 120px;
+    max-height: 120px;
+    margin-top: 15px;
+  }
+
+  .caseone-page {
+    font-size: 13px;
+    padding: 0 20%;
+  }
+}
